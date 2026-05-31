@@ -69,6 +69,13 @@
     options = "--delete-older-than 30d";
   };
 
+  system.autoUpgrade = {
+      enable = true;
+      flake = "/home/vedant/nixos#hp15";
+      dates = "weekly";
+      allowReboot = false;
+    };
+
   nixpkgs.config.permittedInsecurePackages = [ "electron-39.8.10" ];
 
   # Some programs need SUID wrappers, can be configured further or are
