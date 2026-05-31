@@ -63,6 +63,12 @@
     neovim
   ];
 
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
+
   nixpkgs.config.permittedInsecurePackages = [ "electron-39.8.10" ];
 
   # Some programs need SUID wrappers, can be configured further or are
