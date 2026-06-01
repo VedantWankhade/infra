@@ -6,6 +6,7 @@
     ./git.nix
     ./syncthing.nix
     ./ssh.nix
+    ./neovim.nix
   ];
 
   home.username = "vedant";
@@ -16,7 +17,6 @@
       
       # Declare the secret
       secrets.homelab_device_id = {};
-      secrets.master_ssh_key = {};
   };
   
 
@@ -52,8 +52,8 @@
     eza # A modern replacement for ‘ls’
     fzf # A command-line fuzzy finder
  
-    spotify
     logseq
+    spotify
 
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
