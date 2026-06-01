@@ -7,7 +7,6 @@
         vimAlias = true;
         
         extraPackages = with pkgs; [
-            ripgrep
             luarocks
             gopls
         ];
@@ -15,9 +14,11 @@
     plugins = with pkgs.vimPlugins; [
             nvim-lspconfig
             nvim-treesitter.withAllGrammars
+            plenary-nvim  # needed for telescope
             telescope-nvim
+            lazygit-nvim
         ];
     };    
 
-    xdg.configFile."nvim".source = ../dotfiles/config/nvim;
+    xdg.configFile."nvim".source = ../../../dotfiles/config/nvim;
 }

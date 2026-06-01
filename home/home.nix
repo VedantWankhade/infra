@@ -3,11 +3,14 @@
 {
 
   imports = [
-    ./git.nix
     ./syncthing.nix
     ./ssh.nix
-    ./neovim.nix
     ./font/jetbrains.nix
+    ./dev/git.nix
+    ./dev/editor/neovim.nix
+    ./dev/lang.nix
+    ./shell/bash.nix
+    ./shell/prompt/starship.nix
   ];
 
   home.username = "vedant";
