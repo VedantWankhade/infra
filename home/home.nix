@@ -7,6 +7,7 @@
     ./syncthing.nix
     ./ssh.nix
     ./neovim.nix
+    ./font/jetbrains.nix
   ];
 
   home.username = "vedant";

@@ -5,4 +5,5 @@ Add it to ssh agent
 Thats it
 
 # To Do
-- [x] Manage ssh keys using nix
+- [ ] Manage ssh keys using nix
+- [ ] Manage plasma configuration using home manager
