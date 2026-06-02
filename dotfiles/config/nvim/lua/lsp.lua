@@ -16,6 +16,7 @@ require("lspconfig")
 local servers = {
   "lua_ls",
   "gopls",
+  "nil_ls",
   -- Add other servers like "tsserver", "pyright", etc.
 }
 

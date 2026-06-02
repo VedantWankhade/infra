@@ -11,6 +11,7 @@
     ./dev/lang.nix
     ./shell/bash.nix
     ./shell/prompt/starship.nix
+    ./tmux.nix
   ];
 
   home.username = "vedant";
@@ -41,7 +42,6 @@
   # home.file.".xxx".text = ''
   #     xxx
   # '';
-
 
   programs.vscode = {
     enable = true;

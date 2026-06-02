@@ -12,3 +12,13 @@ vim.opt.shiftwidth = 4      -- keep same as softtabstop
 vim.opt.scrolloff = 20      -- keep the cursor above 20 lines
 vim.opt.signcolumn = "yes"  -- show symbols and signs in gutter when available - warnings, hints etc from git, lsp or other stuff
 vim.opt.winborder = "rounded"
+
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], {desc = 'Exit terminal insert mode'})
+vim.api.nvim_create_autocmd('TermOpen', {
+  pattern = '*',
+  callback = function()
+      vim.opt.number = false
+      vim.opt.relativenumber = false
+    vim.cmd('startinsert')
+  end,
+})

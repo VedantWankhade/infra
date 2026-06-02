@@ -9,6 +9,8 @@
         extraPackages = with pkgs; [
             luarocks
             gopls
+            lua-language-server
+            nil
         ];
 
     plugins = with pkgs.vimPlugins; [
@@ -17,6 +19,7 @@
             plenary-nvim  # needed for telescope
             telescope-nvim
             lazygit-nvim
+            which-key-nvim
         ];
     };    
 
