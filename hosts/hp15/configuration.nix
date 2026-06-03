@@ -12,11 +12,13 @@
       ../../modules/locale.nix
       ../../modules/networking.nix
       ../../modules/bluetooth.nix
+      ../../modules/displaymanager/sddm.nix
 
       ../../modules/bootloader/grub/grub.nix
       ../../modules/bootloader/grub/themes/catppuccin.nix
 
-      ../../modules/desktop/plasma.nix
+      # ../../modules/desktop/plasma.nix
+      ../../modules/desktop/hyprland.nix
 
       ../../users/vedant.nix
     ];

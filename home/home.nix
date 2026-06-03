@@ -12,6 +12,7 @@
     ./shell/bash.nix
     ./shell/prompt/starship.nix
     ./tmux.nix
+    ./desktop/hyprland.nix
   ];
 
   home.username = "vedant";
