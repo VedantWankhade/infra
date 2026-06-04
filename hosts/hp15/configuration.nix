@@ -19,6 +19,7 @@
 
       # ../../modules/desktop/plasma.nix
       ../../modules/desktop/hyprland.nix
+      ../../modules/desktop/shell/noctalia.nix
 
       ../../users/vedant.nix
     ];
@@ -33,7 +34,6 @@
     layout = "us";
     variant = "";
   };
-
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;

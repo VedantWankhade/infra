@@ -10,4 +10,8 @@ home.file.".local/share/wallpapers/dystopia-yellow.jpg".source = ../../dotfiles/
     services.hyprpolkitagent.enable = true;
     services.hyprpaper.enable = true;
     services.hyprlauncher.enable = true;
+
+    home.packages = with pkgs; [
+        brightnessctl
+    ];
 }
