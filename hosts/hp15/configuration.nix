@@ -78,6 +78,11 @@
 
   nixpkgs.config.permittedInsecurePackages = [ "electron-39.8.10" ];
 
+  environment.sessionVariables = {
+  # Hints Electron apps to use Wayland instead of XWayland
+  NIXOS_OZONE_WL = "1";
+};
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
