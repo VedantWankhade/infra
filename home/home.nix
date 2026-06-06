@@ -12,6 +12,8 @@
     ./shell/bash.nix
     ./shell/prompt/starship.nix
     ./tmux.nix
+    ./yazi.nix
+    ./zoxide.nix
     ./desktop/hyprland.nix
     ./apps/entertainment.nix
   ];
