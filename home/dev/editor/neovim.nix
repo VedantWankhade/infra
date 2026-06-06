@@ -11,6 +11,7 @@
             gopls
             lua-language-server
             nil
+            delve
         ];
 
     plugins = with pkgs.vimPlugins; [
@@ -20,6 +21,12 @@
             telescope-nvim
             lazygit-nvim
             which-key-nvim
+
+            nvim-dap
+            nvim-dap-ui
+            nvim-dap-virtual-text
+            nvim-nio # needed for nvim-dap-ui
+            nvim-dap-go
         ];
     };    
 

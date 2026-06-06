@@ -4,4 +4,6 @@ vim.keymap.set('n', '<leader>gf', telescope.git_files, { desc = 'Telescope git f
 vim.keymap.set("n", "<leader>e", function()
   vim.diagnostic.open_float()
 end, { desc = "Show diagnostics in a floating window" })
-
+vim.keymap.set("n", "grd", function()
+vim.lsp.buf.hover()
+end, {desc = "Show documentation (hover)"})
