@@ -22,6 +22,7 @@
       ../../modules/desktop/shell/noctalia.nix
 
       ../../users/vedant.nix
+      ../../modules/docker.nix
     ];
 
 
