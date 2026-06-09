@@ -6,7 +6,14 @@
       home.sessionVariables.NIXOS_OZONE_WL = "1";
      xdg.configFile."hypr/hyprland.lua".source = ../../dotfiles/config/hypr/hyprland.lua;
      xdg.configFile."hypr/hyprpaper.conf".source = ../../dotfiles/config/hypr/hyprpaper.conf;
-home.file.".local/share/wallpapers/dystopia-yellow.jpg".source = ../../dotfiles/local/share/wallpapers/dystopia-yellow.jpg;
+    home.file.".local/share/wallpapers" = {
+        source = ../../dotfiles/local/share/wallpapers;
+        recursive = true; 
+    };
+    home.file.".local/share/icons" = {
+        source = ../../dotfiles/local/share/icons;
+        recursive = true;
+    };
     services.hyprpolkitagent.enable = true;
     services.hyprpaper.enable = true;
     services.hyprlauncher.enable = true;

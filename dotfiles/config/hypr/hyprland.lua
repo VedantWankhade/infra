@@ -43,11 +43,9 @@ local menu        = "hyprlauncher"
 -- Or execute your favorite apps at launch like this:
 --
 -- FOR NIX SETUPS - MOSTLY USE THE HOME MANAGER OPTIONS
--- hl.on("hyprland.start", function () 
---   hl.exec_cmd(terminal)
---   hl.exec_cmd("nm-applet")
---   hl.exec_cmd("waybar & hyprpaper & firefox")
--- end)
+hl.on("hyprland.start", function () 
+  hl.exec_cmd("hyprctl setcursor Cartoonish-Bold 24")
+end)
 
 
 -------------------------------
