@@ -16,6 +16,7 @@
     ./zoxide.nix
     ./desktop/hyprland.nix
     ./apps/entertainment.nix
+    ./apps/dev.nix
   ];
 
   home.username = "vedant";
