@@ -5,4 +5,4 @@
 
 # To Do
 - [ ] Manage ssh keys using nix
-- [ ] Manage plasma configuration using home manager
+- [ ] Manage qt application theme configuration using home manager

@@ -18,6 +18,7 @@
     ./apps/dev.nix
     ./apps/office.nix
     ./apps/core.nix
+    ./desktop/theme/qt.nix
   ];
 
   home.username = "vedant";
@@ -48,9 +49,6 @@
   #     xxx
   # '';
 
-  programs.vscode = {
-    enable = true;
-  };
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
