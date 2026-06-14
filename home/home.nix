@@ -16,6 +16,8 @@
     ./desktop/hyprland.nix
     ./apps/entertainment.nix
     ./apps/dev.nix
+    ./apps/office.nix
+    ./apps/core.nix
   ];
 
   home.username = "vedant";
@@ -52,11 +54,9 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    ripgrep # recursively searches directories for a regex pattern
-    logseq
-    spotify
+    
+    
 
-    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
 
