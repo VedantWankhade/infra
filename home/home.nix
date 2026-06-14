@@ -10,10 +10,9 @@
     ./dev/editor/neovim.nix
     ./dev/lang.nix
     ./shell/bash.nix
+    ./shell/utils.nix
     ./shell/prompt/starship.nix
     ./tmux.nix
-    ./yazi.nix
-    ./zoxide.nix
     ./desktop/hyprland.nix
     ./apps/entertainment.nix
     ./apps/dev.nix
@@ -28,7 +27,6 @@
       # Declare the secret
       secrets.homelab_device_id = {};
   };
-  
 
   # Import files from the current configuration directory into the Nix store,
   # and create symbolic links pointing to those store files in the Home directory.
@@ -54,13 +52,7 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    zip
-    unzip
-    
     ripgrep # recursively searches directories for a regex pattern
-    eza # A modern replacement for ‘ls’
-    fzf # A command-line fuzzy finder
- 
     logseq
     spotify
 
