@@ -23,6 +23,7 @@
 
       ../../users/vedant.nix
       ../../modules/docker.nix
+      ../../modules/apps.nix
     ];
 
 
